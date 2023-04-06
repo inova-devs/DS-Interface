@@ -4,7 +4,7 @@ type LoadingDotsProps = {
   color?: string;
 };
 
-export const LoadingDots = ({ color = "#000" }: LoadingDotsProps) => {
+export const LoadingDots = ({ color = "#000000" }: LoadingDotsProps) => {
   return (
     <span className="loading">
       <span style={{ backgroundColor: color }} />
