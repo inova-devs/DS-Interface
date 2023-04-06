@@ -10,7 +10,7 @@
     "clean": "rm -rf .turbo && rm -rf node_modules"
   },
   "dependencies": {
-    "@inovadevs-interface/ui": "workspace:0.0.0",
+    "@inovadevs-interface/ui": "*",
     "@types/node": "18.15.11",
     "@types/react": "18.0.33",
     "@types/react-dom": "18.0.11",
@@ -23,7 +23,7 @@
     "typescript": "5.0.3"
   },
   "devDependencies": {
-    "@inovadevs-interface/tsconfig": "workspace:0.0.0",
+    "@inovadevs-interface/tsconfig": "*",
     "@storybook/addon-essentials": "^7.0.2",
     "@storybook/addon-interactions": "^7.0.2",
     "@storybook/addon-links": "^7.0.2",
@@ -34,7 +34,7 @@
     "@storybook/storybook-deployer": "^2.8.16",
     "@storybook/testing-library": "^0.0.14-next.2",
     "autoprefixer": "^10.4.14",
-    "eslint-config-custom": "workspace:*",
+    "eslint-config-custom": "*",
     "eslint-plugin-storybook": "^0.6.11",
     "postcss": "^8.4.21",
     "postcss-loader": "^7.2.4",

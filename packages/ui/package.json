@@ -17,12 +17,12 @@
     "react": "^18.2.0"
   },
   "devDependencies": {
-    "@inovadevs-interface/tsconfig": "workspace:*",
+    "@inovadevs-interface/tsconfig": "*",
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.4",
     "autoprefixer": "^10.4.14",
     "eslint": "^8.15.0",
-    "eslint-config-custom": "workspace:*",
+    "eslint-config-custom": "*",
     "postcss": "^8.4.21",
     "react": "^18.1.0",
     "tailwindcss": "^3.3.1",
@@ -33,7 +33,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@inovadevs-interface/utils": "workspace:*",
+    "@inovadevs-interface/utils": "*",
     "class-variance-authority": "^0.5.1",
     "react-icons": "^4.8.0",
     "tailwindcss-animate": "^1.0.5"
