@@ -9,8 +9,8 @@
     "./styles.css": "./dist/index.css"
   },
   "scripts": {
-    "build": "tsup",
-    "dev": "tsup --watch",
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
     "check-types": "tsc --noEmit"
   },
   "peerDependencies": {
