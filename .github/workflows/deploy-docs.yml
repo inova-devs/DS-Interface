@@ -14,15 +14,18 @@ jobs:
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
-
-      - name: Install pnpm
-        run: npm install -g pnpm
-
         with:
           node-version: 16
 
-      - run: pnpm install
+      - name: Install pnpm
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 6.0.2
 
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build
       - run: npm run build
 
       - name: Deploy storybook
