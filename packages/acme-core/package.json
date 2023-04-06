@@ -27,5 +27,9 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "@acme/utils": "workspace:*",
+    "react-icons": "^4.8.0"
   }
 }
