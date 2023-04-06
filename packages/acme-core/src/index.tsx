@@ -1,2 +1,4 @@
-import * as React from "react";
-export { Button, type ButtonProps } from "./Button";
+import "./styles.css";
+
+export * from "./button";
+export * from "./loading-dots";
