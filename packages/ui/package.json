@@ -1,5 +1,7 @@
 {
-  "name": "@inovadevs-interface/ui",
+  "name": "@inovadevs-org/ui",
+  "version": "1.1.0",
+  "license": "MIT",
   "sideEffects": [
     "**/*.css"
   ],
@@ -17,7 +19,7 @@
     "react": "^18.2.0"
   },
   "devDependencies": {
-    "@inovadevs-interface/tsconfig": "*",
+    "@inovadevs-org/tsconfig": "*",
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.4",
     "autoprefixer": "^10.4.14",
@@ -33,7 +35,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@inovadevs-interface/utils": "*",
+    "@inovadevs-org/utils": "*",
     "class-variance-authority": "^0.5.1",
     "react-icons": "^4.8.0",
     "tailwindcss-animate": "^1.0.5"

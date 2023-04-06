@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 
-import { cn } from "@inovadevs-interface/utils";
+import { cn } from "@inovadevs-org/utils";
 import { VariantProps, cva } from "class-variance-authority";
 
 const buttonVariants = cva(

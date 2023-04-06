@@ -2,7 +2,7 @@ import type { Preview } from "@storybook/react";
 import { withThemeByDataAttribute } from "@storybook/addon-styling";
 
 import "../src/styles/globals.css";
-import "@inovadevs-interface/ui/styles.css";
+import "@inovadevs-org/ui/styles.css";
 
 const preview: Preview = {
   parameters: {

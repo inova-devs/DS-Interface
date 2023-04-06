@@ -1,7 +1,7 @@
 import React from "react";
 
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Button, LoadingDots } from "@inovadevs-interface/ui";
+import { Button, LoadingDots } from "@inovadevs-org/ui";
 
 export default {
   title: "Ui/Button",
