@@ -1,5 +1,11 @@
 # @inovadevs-org/ui
 
+## 2.0.2
+
+### Patch Changes
+
+- test
+
 ## 2.0.1
 
 ### Patch Changes
