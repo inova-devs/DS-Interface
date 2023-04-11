@@ -1,100 +1,96 @@
 import React from "react";
 
 import { Button, LoadingDots } from "@inovadevs-org/ui";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
+import { StoryObj, Meta } from "@storybook/react";
 
-export default {
+const meta: Meta<typeof Button> = {
   title: "Ui/Button",
   component: Button,
-  argTypes: {
-    variant: {
-      control: {
-        type: "select",
-        options: [
-          "default",
-          "destructive",
-          "outline",
-          "subtle",
-          "ghost",
-          "link",
-        ],
-      },
-    },
-    size: {
-      control: {
-        type: "select",
-        options: ["lg", "default", "sm"],
-      },
-    },
-  },
   args: {
     children: "Button",
     variant: "default",
     size: "default",
   },
+  argTypes: {
+    variant: {
+      options: ["default", "destructive", "outline", "subtle", "ghost", "link"],
+      control: { type: "select" },
+    },
+    size: {
+      options: ["sm", "default", "lg", "xl"],
+      control: { type: "select" },
+    },
+  },
+  tags: ["autodocs"],
   parameters: {
     layout: "centered",
   },
-
-  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
-} as ComponentMeta<typeof Button>;
-
-// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
-
-export const Default = Template.bind({});
-Default.args = {
-  children: "Button",
 };
 
-export const Destructive = Template.bind({});
-Destructive.args = {
-  variant: "destructive",
+export default meta;
+type Story = StoryObj<typeof Button>;
+
+export const Default: Story = {
+  render: (args) => <Button {...args} />,
 };
 
-export const Outline = Template.bind({});
-Outline.args = {
-  variant: "outline",
-};
-
-export const Subtle = Template.bind({});
-Subtle.args = {
-  variant: "subtle",
-};
-
-export const Ghost = Template.bind({});
-Ghost.args = {
-  variant: "ghost",
-};
-
-export const Link = Template.bind({});
-Link.args = {
-  variant: "link",
-};
-
-export const WithIcon = Template.bind({});
-WithIcon.args = {
-  children: [
-    "Button",
-    <span key="icon" className="ml-2">
-      👍
-    </span>,
-  ],
-};
-
-export const WithLoader = Template.bind({});
-WithLoader.args = {
-  children: <LoadingDots />,
-};
-WithLoader.argTypes = {
-  children: {
-    control: {
-      disable: true,
-    },
+export const Destructive: Story = {
+  args: {
+    variant: "destructive",
   },
+  render: (args) => <Button {...args} />,
 };
 
-export const Disabled = Template.bind({});
-Disabled.args = {
-  disabled: true,
+export const Outline: Story = {
+  args: {
+    variant: "outline",
+  },
+  render: (args) => <Button {...args} />,
+};
+
+export const Subtle: Story = {
+  args: {
+    variant: "subtle",
+  },
+  render: (args) => <Button {...args} />,
+};
+
+export const Ghost: Story = {
+  args: {
+    variant: "ghost",
+  },
+  render: (args) => <Button {...args} />,
+};
+
+export const Link: Story = {
+  args: {
+    variant: "link",
+  },
+  render: (args) => <Button {...args} />,
+};
+
+export const WithIcon: Story = {
+  render: (args) => (
+    <Button {...args}>
+      Button
+      <span key="icon" className="ml-2">
+        👍
+      </span>
+    </Button>
+  ),
+};
+
+export const WithLoader: Story = {
+  args: {
+    children: <LoadingDots />,
+    disabled: true,
+  },
+  render: (args) => <Button {...args} />,
+};
+
+export const Disabled: Story = {
+  args: {
+    disabled: true,
+  },
+  render: (args) => <Button {...args} />,
 };
